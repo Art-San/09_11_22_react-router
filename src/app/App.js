@@ -6,7 +6,7 @@ import Login from './components/Login'
 import Home from './components/Home'
 import Stats from "./components/Stats";
 
-// Swetch упорядочивай пути *улка к верху ногами*
+// Swetch упорядочивай пути *Ёлка к верху спилом*
 function App() {
   return (
     <div>
