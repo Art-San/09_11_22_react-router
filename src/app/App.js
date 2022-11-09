@@ -16,16 +16,17 @@ function App() {
       <NavBar/>
       <h1>App</h1>
       <Switch>
-        <Route path='/' exact component={Home}/>
-        <Route path='/dashboard/stats' component={Stats}/>
-        <Route 
-            path='/dashboard'
-            render={(props) => {
-                return false && <Dashboard isAdmin={false} {...props}/>
-            }}
-        />
-        <Route path='/posts' component={Posts}/>
-        <Route path='/login' component={Login}/>
+          <Route path='/' exact component={Home}/>
+          <Route path='/dashboard/stats' component={Stats}/>
+          <Route 
+              path='/dashboard'
+              render={(props) => {
+                  return (false && <Dashboard isAdmin={false} {...props}/>
+                  )
+              }}
+          />
+          <Route path='/posts' component={Posts}/>
+          <Route path='/login' component={Login}/>
       </Switch>
     </div>
   );
