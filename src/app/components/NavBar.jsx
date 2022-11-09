@@ -22,3 +22,13 @@ const NavBar = () => {
 }
 
 export default NavBar
+
+// Если после добавления компонента Link на 02:38 у тебя не происходит 
+// переход на другой роут, то необходимо в index.js компонент React.StrictMode 
+// переместить внутрь компонента BrowserRouter таким образом:
+
+<BrowserRouter>
+    <React.StrictMode>
+        <App />
+    </React.StrictMode>
+</BrowserRouter>
