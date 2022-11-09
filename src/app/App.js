@@ -6,6 +6,10 @@ import Login from './components/Login'
 import Home from './components/Home'
 import Stats from "./components/Stats";
 
+// получаем два варианта для отображения наших компонентов
+// первый через component
+// втрой через render
+
 function App() {
   return (
     <div>
@@ -14,7 +18,12 @@ function App() {
       <Switch>
         <Route path='/' exact component={Home}/>
         <Route path='/dashboard/stats' component={Stats}/>
-        <Route path='/dashboard' component={Dashboard}/>
+        <Route 
+            path='/dashboard'
+            render={(props) => {
+                return false && <Dashboard isAdmin={false} {...props}/>
+            }}
+        />
         <Route path='/posts' component={Posts}/>
         <Route path='/login' component={Login}/>
       </Switch>
