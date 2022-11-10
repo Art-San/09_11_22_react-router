@@ -3,7 +3,7 @@ import PostsList from "./PostsList";
 import Post from "./Post";
 import query from 'query-string'
 import _ from 'lodash'
-
+// С динамическими заголовками надо разбиратся
 const Posts = ({match, location}) => {
   const posts = [
     {id: 1, label: 'post 1'},
