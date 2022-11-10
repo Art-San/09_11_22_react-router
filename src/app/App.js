@@ -23,5 +23,3 @@ function App() {
 }
 
 export default App;
-
-// :display?' в порядке бреда для демонстрации, и получим его в компоненте POSTS
