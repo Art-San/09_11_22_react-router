@@ -1,7 +1,6 @@
 import React from 'react'
 
 const Post = ({match, posts }) => {
-    console.log('match', match)
     const postId = match.params.postId
     const getPostById = (id) => {
         return posts.find((post) => post.id.toString() === id)
