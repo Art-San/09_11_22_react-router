@@ -27,11 +27,11 @@ function App() {
         <Route path='/login' component={Login}/>
         <Route 
             path='/posts/:postId'
-            render={(props) => <Post pasts={posts} {...props}/>}
+            render={(props) => <Post posts={posts} {...props}/>}
           />
         <Route 
             path='/posts'
-            render={(props) => <PostsList pasts={posts} {...props}/>}
+            render={(props) => <PostsList posts={posts} {...props}/>}
           />
         
       </Switch>

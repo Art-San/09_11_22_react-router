@@ -1,8 +1,12 @@
 import React from 'react'
 
-const PostsList = () => {
+const PostsList = ({posts}) => {
   return (
-    <div>PostsList</div>
+    <>
+      {posts.map((post) => (
+            <h3 key={post.id}>{post.label}</h3>
+        ))}
+    </>
   )
 }
 
