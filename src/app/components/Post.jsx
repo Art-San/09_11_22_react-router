@@ -1,13 +1,16 @@
 import React from 'react'
+import { useHistory } from 'react-router-dom'
+// useHistory (хук)
+// PUSH- мщжно вернутся оратно в пост
+// REPLACE - вернутся не получится
 
-// PUSH: может вернутся на предыдущюю странницу
-// REPLACE: не возможно вернутся на предыдущую страницу
-const Post = ({ id, posts, history }) => {
+const Post = ({ id, posts }) => {
+    const history = useHistory()
     const getPostById = (id) => {
         return posts.find((post) => post.id.toString() === id)
     }
     const handleSave = () => {
-      history.replace('/posts')
+      history.push('/posts')
 
     }
     const post = getPostById(id)
