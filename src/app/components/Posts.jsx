@@ -1,4 +1,4 @@
-import React from 'react'
+// import React from 'react'
 import PostsList from "./PostsList";
 import Post from "./Post";
 import { useParams } from 'react-router-dom';
