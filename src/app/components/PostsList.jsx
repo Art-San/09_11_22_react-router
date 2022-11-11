@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 
 const PostsList = ({posts}) => {
-  console.log('posts', posts)
+  // console.log('posts', posts)
   return (
     <>
       {posts.map((post) => (

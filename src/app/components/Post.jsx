@@ -1,6 +1,6 @@
 import React from 'react'
 import { useHistory } from 'react-router-dom'
-// useHistory (хук)
+// useHistory (хук) для переадресации пользователя на нужную страницу
 // PUSH- мщжно вернутся оратно в пост
 // REPLACE - вернутся не получится
 
