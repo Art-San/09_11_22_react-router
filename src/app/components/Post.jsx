@@ -7,7 +7,7 @@ const Post = ({ id, posts, history }) => {
         return posts.find((post) => post.id.toString() === id)
     }
     const handleSave = () => {
-      history.replace('/posts')
+      history.push('/posts')
 
     }
     const post = getPostById(id)
