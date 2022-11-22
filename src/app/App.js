@@ -18,7 +18,7 @@ function App() {
         <Route path='/dashboard' component={Dashboard}/>
         <Route path='/login' component={Login}/>
         <Route path='/posts/:postId?/:display?' component={Posts}/>
-        <Route path='/404'component={NotFound} />
+        <Route path='/404' component={NotFound} />
         <Redirect from="/admin" to='/dashboard' />
         <Redirect to='/404'/>
       </Switch>
@@ -34,7 +34,7 @@ function App() {
 //           <h1>App</h1>
 //           <Switch>
 //               <Route path="/" exact component={Home} />
-//               <Route path="/signin" component={Login} />
+//               <Route path="/login" component={Login} />
 //               <Route path="/posts/:postId?" component={Posts} />
 //               <Route path='/dashboard/stats' component={Stats}/>
 //               <Route path="/dashboard" component={Dashboard} />
