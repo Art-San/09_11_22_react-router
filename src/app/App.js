@@ -13,13 +13,12 @@ function App() {
       <NavBar/>
       <h1>App</h1>
       <Switch>
-        <Route path="/" exact component={Home} />
-        <Route path="/signin" component={SignIn} />
-        <Route path="/posts/:postId?" component={Posts} />
-        <Route path="/contacts" component={Contacts} />
-        <Route path='/404' component={NotFound}/>
-        <Redirect from="/lk" to="/signin" />
-        <Redirect to='/404'/>
+          <Route path="/" exact component={Home} />
+          <Route path="/signin" component={SignIn} />
+          <Route path="/posts/:postId?" component={Posts} />
+          <Route path="/contacts" component={Contacts} />
+          <Redirect from="/lk" to="/signin" />
+          <Route component={NotFound} />
       </Switch>
     </div>
   );
